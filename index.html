@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-decoration: underline;
+            text-align: center;
+        }
+        pre{
+            font-weight: bolder;
+        }
+        body{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Of Objects</h1>
+    <pre>Q-let studentRecords=[{name:'John',Id:123,marks:98},
+        {name:'Baba',Id:101,marks:23},
+        {name:'Yaga',Id:200,marks:45},
+        {name:'Wick',Id:115,marks:75},]</pre>
+    <pre>1.studentRecords.map((item)=>{
+        console.log(item.name.toUpperCase());
+    })</pre>
+    <img src="./21.png">
+    <hr>
+    <pre>2.studentRecords.map((item)=>{
+        if(item.marks>50)
+        console.log(item);
+    })</pre>
+    <img src="./22.png">
+    <hr>
+    <pre>3.studentRecords.map((item)=>{
+        if(item.marks>50 && item.Id>120)
+        console.log(item);})</pre>
+        <img src="./24.png">
+    <hr>
+    <pre>4.let sum=studentRecords.reduce((prevalue,curvalue)=>{
+        return prevalue+=curvalue.marks
+    },0)
+    console.log(sum)</pre>
+    <img src="./23.png">
+    <hr>
+    
+    <pre>5.studentRecords.map((item)=>{
+        if(item.marks>50)
+        console.log(item.name);
+    })</pre>
+    <img src="./25.png">
+    <hr>
+    <pre>6.studentRecords.map((item)=>{
+        if(item.Id>120)
+        console.log(item.marks);})</pre>
+        <img src="./27.png">
+    <hr>
+    <pre>7.
+    studentRecords.map((item)=>{
+        if(item.marks<50)
+          item.marks+=15;
+        console.log(item);
+    })
+</pre>
+<h3>John and wick marks would not be changed . only Baba and yaga marks be changed because their marks is less than 50.</h3>
+<img src="./26.png">
+<hr>
+<pre>8.Create six objects.</pre>
+<pre>let studentRecords1 = [
+    { name: 'John', class: '10th', rollNo: 101 },
+    { name: 'Jane ', class: '9th', rollNo: 202 },
+    { name: 'Michael', class: '11th', rollNo: 303 },
+    { name: 'Emily', class: '12th', rollNo: 404 },
+    { name: 'David ', class: '10th', rollNo: 505 },
+    { name: 'Sarah ', class: '9th', rollNo: 606 }
+  ];
+  
+  console.log(studentRecords1)</pre>
+<img src="./30.png">
+
+    <script src="./script.js"></script>
+</body>
+</html>
